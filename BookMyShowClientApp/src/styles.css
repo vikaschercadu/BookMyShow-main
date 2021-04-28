@@ -1,0 +1,125 @@
+@import '~ngx-toastr/toastr.css';
+
+*:not(h2):focus {
+  outline: 0;
+}
+.heading{
+  background-color:rgb(51, 53, 69);
+}
+.movie-poster{
+  border-radius:15px;
+  height: 400px;
+}
+.font-size-30{
+  font-size:  30px;
+}
+.font-size-36{
+  font-size: 36px;
+}
+.font-size-18{
+  font-size:18px;
+}
+.font-size-20{
+  font-size: 20px;
+}
+.font-Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.font-weight-300{
+  font-weight:300;
+}
+.font-size-24{
+  font-size:24px;
+}
+.app-background{
+  height: 655px;
+  background: linear-gradient(to right, #222222 0%, #434041 80%, #434041 100%);
+}
+.book-tickets-button{
+  width: 150px;
+  height: 50px;
+}
+.movie-detail-link{
+  cursor: pointer;
+  border: none;
+}
+.border-theatre{
+  border: 1px solid rgb(169, 247, 221);
+}
+.border-show{
+  border: 1px solid darkgrey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.show-margin{
+  margin-top: -17px;
+  margin-bottom: 17px;
+}
+/* .form-input{
+  width: 60%;
+} */
+.login{
+  cursor: pointer;
+}
+.border-total{
+  border-bottom: 2px dotted darkgrey;
+}
+.drop-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline:0;
+}
+.dropdown-divider{
+  border-top:none;
+}
+.menu-background{
+  background-color: rgb(51, 53, 69);
+}
+.border-menu{
+  border-bottom: 1px solid white;
+}
+.tab-header{
+  text-align: center;
+}
+
+.tab-header h2.active {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.tab-header h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  display:inline-block;
+  padding: 30px 40px 10px 40px;
+  cursor: pointer;
+  color: #545d6a;
+  border-bottom: 2px solid #545d6a;
+}
+
+.tab-header h2:focus {
+    outline: none;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.wrapped-div {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #2e3137;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}

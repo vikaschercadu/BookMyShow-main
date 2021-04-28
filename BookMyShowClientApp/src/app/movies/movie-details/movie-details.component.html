@@ -1,0 +1,16 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container">
+    <div class="d-sm-flex">
+      <img src={{movie.imageUrl}} class="movie-poster" alt={{movie.imageUrl}}>
+      <div class="ml-5 pl-5">
+        <div class=" font-Roboto font-weight-bold font-size-36 text-white">{{movie.title}}</div>
+        <div class="text-white font-weight-300 font-size-24 mt-1">Genre: {{movie.genre}}</div>
+        <div class="text-white font-weight-300 font-size-24 mt-1">Language: {{movie.language}}</div>
+        <div class="text-white font-weight-300 font-size-24 mt-1">Running Time: {{movie.runningTime}}</div>
+        <div class="text-white font-weight-300 font-size-24 mt-1">Release Date: {{movie.releaseDate | date: 'd MMM,yyyy'}}</div>
+        <button class="btn btn-primary book-tickets-button mt-5 font-size-18" [routerLink]="['/theatre']">Book Tickets</button>
+      </div>  
+    </div>
+  
+  </div>
+</div>

@@ -1,0 +1,7 @@
+export * from './city.service'
+export * from './login.service'
+export * from './movie-details.service'
+export * from './movie.service'
+export * from './payment.service'
+export * from './seat.service'
+export * from './theatre.service'

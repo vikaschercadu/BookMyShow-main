@@ -1,0 +1,12 @@
+<div class="jumboton jumbotron-fluid app-background pt-5">
+  <div class="container pt-5">
+    <div >
+      <div class="text-white font-Roboto font-size-30 pt-5 mb-3">
+        Select Your City
+      </div>
+      <select class="form-control" [(ngModel)]="cityId" (change)="selected()">
+        <option *ngFor="let city of cities" value="{{city.id}}">{{city.name}}</option>
+      </select>
+    </div>
+  </div>
+</div>

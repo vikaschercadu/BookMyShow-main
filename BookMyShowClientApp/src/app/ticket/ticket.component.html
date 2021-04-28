@@ -1,0 +1,31 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container mt-5">
+    <div class="text-white font-size-24">
+      Ticket Details
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Theatre Name:</div>
+      <div class="text-success font-size-20">{{paymentService.selectedTheatre.name}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Total seats:</div>
+      <div class="text-success font-size-20">{{paymentService.getNoOfSeats()}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Show Date:</div>
+      <div class="text-success font-size-20">{{seatService.selectedShow.date | date: 'd MMM,yyyy'}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Show Time:</div>
+      <div class="text-success font-size-20">{{seatService.selectedShow.startTime}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Amount Paid:</div>
+      <div class="text-success font-size-20">{{paymentService.getNoOfSeats()*paymentService.selectedTheatre.ticketPrice}}</div>
+    </div>
+    <div class="mt-3 d-sm-flex">
+      <button class="btn btn-primary mr-3" [routerLink]="['/movies']">Book More Tickets</button>
+      <button class="btn btn-primary" [routerLink]="['/city']">Back to Home</button>
+    </div>
+  </div>
+</div>

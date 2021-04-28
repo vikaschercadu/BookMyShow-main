@@ -1,0 +1,23 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container">
+    <div class="font-weight-bold font-size-30 font-Roboto mb-3 mt-2 text-white">
+      Recommended Movies
+    </div>
+    <div class="d-sm-flex my-1 px-0 container movie-detail-link">
+      <div *ngFor="let movie of movies" [routerLink]="['/movie-details',movie.id]">
+        <div class="mr-5">
+          <img src={{movie.imageUrl}} class="movie-poster">
+        </div>
+        <div class="mt-3 font-Roboto font-weight-bold px-1 font-size-18 text-white">
+          {{movie.title}}
+        </div>
+        <div class="px-1 text-white">
+          {{movie.genre}}
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,27 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container">
+    <div class="text-white font-Roboto font-size-30">
+      Booking Summary
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Theatre Name:</div>
+      <div class="text-success font-size-20">{{paymentService.selectedTheatre.name}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Total seats:</div>
+      <div class="text-success font-size-20">{{paymentService.getNoOfSeats()}}</div>
+    </div>
+    <div class="d-sm-flex mt-3 border-total">
+      <div class="text-white font-size-18 mr-3">Ticket Price:</div>
+      <div class="text-success font-size-20">{{paymentService.selectedTheatre.ticketPrice}}</div>
+    </div>
+    <div class="d-sm-flex mt-3">
+      <div class="text-white font-size-18 mr-3">Amount Payable:</div>
+      <div class="text-success font-size-20">{{paymentService.getNoOfSeats()*paymentService.selectedTheatre.ticketPrice}}</div>
+    </div>
+    <div class="mt-3 d-sm-flex">
+      <button class="btn btn-primary mr-3" (click)="confirmBooking()">Confirm Payment</button>
+      <button class="btn btn-primary" (click)="cancelPayment()">Cancel Payment</button>
+    </div>
+  </div>
+</div>

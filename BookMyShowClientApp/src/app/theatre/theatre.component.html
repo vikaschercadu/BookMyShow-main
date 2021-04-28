@@ -1,0 +1,24 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container mt-5 ">
+    <div class="text-white font-size-30 mb-3">Select theatre and Show Time</div>
+    <div *ngFor="let theatre of showsInTheatre" class="pl-4 pt-4">
+      <div class="d-sm-flex">
+        <div class="text-white font-weight-bold font-size-24 font-Roboto">{{theatre.name}}</div>
+        <div *ngFor="let show of theatre.shows" class="d-sm-flex pl-4" [routerLink]="['/seat',show.hallId,show.id]">
+          <div class="text-white border-show py-2 px-2 show-margin">
+            <div class="text-success">
+              {{show.date | date: 'd MMM,yyyy'}}
+            </div>
+            <div class="text-center">
+              {{show.startTime}}
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+
+

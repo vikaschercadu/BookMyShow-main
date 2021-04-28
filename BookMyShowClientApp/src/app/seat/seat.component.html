@@ -1,0 +1,21 @@
+<div class="jumbotron jumbotron-fluid app-background mb-0">
+  <div class="container mt-5">
+    <div class="text-white mb-3 font-size-24">Please enter the number of seats you want to book</div>
+      <div class=" form-group">       
+          <input type="text" class="form-control" [(ngModel)]="noOfSeats" name="name"    
+              #name="ngModel" required placeholder="0">    
+            <span class="text-danger"    
+                *ngIf="name.touched && name.errors?.required">    
+                Please enter the no of Seats you wish to Book  
+            </span>
+        </div>   
+    <div class="text-white font-size-18 mt-3">Total Seats Available are: {{selectedHall.totalSeats-bookedSeats}}</div>
+    <div *ngIf="validateSeats() && name.valid">
+      <div *ngIf="name.valid" class="text-white font-size-18 mt-3">You have selected {{noOfSeats}} seats</div>
+      <button class="btn btn-primary mt-3" type="submit" [disabled]="!name.valid" (click)="onSubmit()">Proceed For Payment</button>
+    </div>
+    <div *ngIf="!validateSeats() && name.valid" class="font-size-18 mt-3">
+      <div *ngIf="name.valid" class="text-white">Sorry {{noOfSeats}} are not available, You can try another hall</div>
+    </div>
+  </div>
+</div>

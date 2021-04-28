@@ -1,0 +1,9 @@
+.heading{
+  background-color:rgb(51, 53, 69);
+}
+.movie-poster{
+  border-radius:30px;
+}
+#toast-container > div {
+  opacity:1;
+}
